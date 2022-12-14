@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Kenyon Review</title>
+    <meta name ="description" content = "A webpage that goes into depth about my favorite games">
+
+</head>
+<body>
+<header>
+    <a href = "http://localhost:63342/CS601_HW2_Wilkerson/CS601_HW1_Wilkerson/src/Biography_file.html?_ijt=65o5k7gpsr1a1qn7vnvskmeh37&_ij_reload=RELOAD_ON_SAVE">Biography</a>
+
+    <a href = "http://localhost:63342/CS601_HW2_Wilkerson/CS601_HW1_Wilkerson/src/Hobbies.html?_ijt=sui9n46c6mif1919ueghb1r2oq&_ij_reload=RELOAD_ON_SAVE">Hobbies</a>
+
+    <a id = "trail" href = "http://localhost:63342/CS601_HW2_Wilkerson/CS601_HW1_Wilkerson/src/GamingBlog.html?_ijt=lq41v8p5tnga5msrn17qnb86im&_ij_reload=RELOAD_ON_SAVE">Blog</a>
+
+    <a href = "http://localhost:63342/CS601_HW2_Wilkerson/CS601_HW1_Wilkerson/src/contact.html?_ijt=p07crpaos2snc4bch2osi7r9ns&_ij_reload=RELOAD_ON_SAVE">Contact</a>
+
+    <a href = "http://localhost:63342/CS601_HW2_Wilkerson/CS601_HW1_Wilkerson/src/Coding%20Jounrey.html?_ijt=sui9n46c6mif1919ueghb1r2oq&_ij_reload=RELOAD_ON_SAVE"> Coding Journey</a>
+
+    <a href = "http://localhost:63342/CS601_HW2_Wilkerson/CS601_HW1_Wilkerson/src/experience.html?_ijt=d9mng567po70ldu21v44sqd2ke&_ij_reload=RELOAD_ON_SAVE">Experience</a>
+
+    <a href = "http://localhost:63342/CS601_HW2_Wilkerson/CS601_HW1_Wilkerson/src/Photo%20Gallery.html?_ijt=2o27r7md2madg39didde1j6cfn&_ij_reload=RELOAD_ON_SAVE">Photos</a>
+
+
+
+
+</header>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<div id="setup">
+
+    <div>
+        <div class = "card">
+            <div class = "content"> <!--Content Divider that allows us to set up the front and back of the card-->
+                <div class = "front"><!--Front of the card-->
+                    <img src = "EldenBack.jpg" alt = "A cover of the game Elden Ring">
+                </div>
+
+
+
+
+                <div class = "back"> <!--Back of the card-->
+                    <h2>Elden Ring</h2>
+                    <p>Elden Ring is a third person action-rpg from FromSoftware
+                    It features a vast open world and set pieces that makes you want
+                    to go explore. One thing I love about Elden Ring was the fact that
+                    there were no markers or hubs clogging your view which enhances the game's experience. The bosses
+                    were fun and challenging, however, the story was lackluster and boring to me. I understand that
+                     part of the fun was making your own, but I prefer a more linear experience.
+                    That is why I give Elden Ring a 9.0/10.0</p>
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div class = "card">
+        <div class = "content">
+            <div class = "front">
+                <img src = "Guardians.jpg" alt = "A cover of the game Guardians Of The Galaxy">
+            </div>
+
+            <div class = "back">
+                <h2>Guardians of the Galaxy</h2>
+                <p>Guardians of the galaxy was a surprise hit for me. <!--Review-->
+                Not only did it scratch my superhero itch, but it also provided
+                a good story. The gameplay was also intriguing as it
+                surrounded you synergizing your abilities with the other character. Also,
+                    all the characters were fun and engaging and enhanced the story in
+                    a meaningful way. The game would have been a 10 out of 10 for me, if it was not for the bugs I
+                experienced during my play. The linear story,character,gameplay and bugs earns this game a 9.5/10</p>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+    <div class = "card">
+        <div class = "content">
+            <div class = "front">
+                <img src = "Sifuback.jpg" alt = "A cover of the game Sifu">
+            </div>
+
+            <div class = "back">
+                <h2>Sifu</h2>
+                <p>Sifu is one of those niche games that come along once in a while.
+                They go under the radar and, therefore, is underrated. However, Sifu features
+                quality content that can contend with triple A titles. The unique art style
+                combined with the fun, engaging combat makes for a unique experience. The story is short but
+                interesting and the classic kung fu aesthetic fits the game well. Unfortunately, like I said, the game is pretty short,
+                    but I've always prefer quality over quantity so I give it a 9.3/10.</p>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+</div>
+
+
+<script>
+
+
+</script>
+
+<style>
+    * {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
+
+    body{
+    background-image:url("Blog_back.jpg");
+    }
+
+    #setup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    }
+
+
+    p{
+    font-size: 14pt;
+    color: white;
+    font-weight: bold;
+    }
+
+    h2{
+    color: white;
+    text-align: center;
+    }
+
+    a:hover{
+    color:DarkOrange;
+     }
+
+/*The Css for the Card object its self*/
+    .card{
+    border: 6px solid white;
+    border-radius: 15px;
+    box-shadow: 0 0 5px white;
+    padding: 2rem;
+    max-width: 350px; <!--Increase Size-->
+    width: 100%;
+    text-align: center;
+    font-size: 18pt;
+    text-shadow: 0 0 5px black
+    background-image: white;
+  transition: all 1.5s ease;
+    transform-style: preserve-3d;
+    margin-top:20px;
+    position: static;
+    margin-right: 20px;
+    }
+
+/*Card flips when you hover over it*/
+    .card:hover{
+    transform:rotateY(0.5turn);
+    }
+
+/*The Css for the content of the card*/
+    .card.content{
+    transform-style: preserve-3d;
+    transition: ease-in;
+    }
+
+     /*The CSS for the front of the card*/
+    .card .front{
+    transform-style: preserve-3d;
+    backface-visibility:hidden;
+    display: flex;
+    flex-direction: column;
+    }
+
+/*Css for the back of the card*/
+    .card .back{
+    transform: rotateY(0.5turn);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform-style: preserve-3d;
+    backface-visibility:hidden;
+    display: flex;
+    flex-direction: column;
+    }
+
+
+
+   a{
+  padding: 10px 20px;
+  position:static;
+  height: 10%;
+  width: 40%;
+  background-color:transparent;
+  border-color: yellow;
+  color: white;
+  border-radius: 8px;
+  opacity: 1;
+  font-size:14pt;
+  margin-left: 80px;
+  text-decoration: none;
+    }
+
+    #trail{
+  background-color: blue;
+   }
+
+
+
+</style>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href = "CSstylesheet.css" rel = "stylesheet">
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+    <meta name ="description" content = "The front page of my website">
+
+
+</head>
+
+<body>
+
+<header>
+
+    <a href = "http://localhost:63342/CS601_HW2_Wilkerson/CS601_HW1_Wilkerson/src/Biography_file.html?_ijt=65o5k7gpsr1a1qn7vnvskmeh37&_ij_reload=RELOAD_ON_SAVE">Biography</a>
+
+    <a href = "http://localhost:63342/CS601_HW2_Wilkerson/CS601_HW1_Wilkerson/src/Hobbies.html?_ijt=sui9n46c6mif1919ueghb1r2oq&_ij_reload=RELOAD_ON_SAVE">Hobbies</a>
+
+    <a href = "http://localhost:63342/CS601_HW2_Wilkerson/CS601_HW1_Wilkerson/src/GamingBlog.html?_ijt=lq41v8p5tnga5msrn17qnb86im&_ij_reload=RELOAD_ON_SAVE">Blog</a>
+
+    <a href = "http://localhost:63342/CS601_HW2_Wilkerson/CS601_HW1_Wilkerson/src/contact.html?_ijt=p07crpaos2snc4bch2osi7r9ns&_ij_reload=RELOAD_ON_SAVE">Contact</a>
+
+    <a href = "http://localhost:63342/CS601_HW2_Wilkerson/CS601_HW1_Wilkerson/src/Coding%20Jounrey.html?_ijt=sui9n46c6mif1919ueghb1r2oq&_ij_reload=RELOAD_ON_SAVE"> Coding Journey</a>
+
+    <a href = "http://localhost:63342/CS601_HW2_Wilkerson/CS601_HW1_Wilkerson/src/experience.html?_ijt=d9mng567po70ldu21v44sqd2ke&_ij_reload=RELOAD_ON_SAVE">Experience</a>
+
+    <a href = "http://localhost:63342/CS601_HW2_Wilkerson/CS601_HW1_Wilkerson/src/Photo%20Gallery.html?_ijt=2o27r7md2madg39didde1j6cfn&_ij_reload=RELOAD_ON_SAVE">Photos</a>
+
+
+</header>
+
+<article>
+<p id = "hello_text">Hello,</p>
+<p id = "name_text">My name is Kenyon Wilkerson</p>
+<p id = "home_text">and I am an aspiring</p>
+<p id = "software_dev">Software Developer</p>
+
+
+</article>
+
+<article id = "main_text">
+    <p id = "welcome_text">Welcome</p>
+
+
+    <p >I made this website not only to show how far I've come as an HTML, Javascript and overall frontend
+        developer, but also to learn more about myself.
+        Here you will find my experience, hobbies, aspirations and goals.
+        Hopefully, through this website, you can learn more about me and perhaps
+        follow me though the journey of entering the tech industry.
+
+    </p>
+
+
+</article>
+
+
+    <style>
+
+
+
+        body{
+        background-image: url("Bakcgrounddark.jpg");
+
+         }
+
+        #imgdivid{
+        position: absolute;
+        top: 20%;
+        left: 60%;
+        width: 100%;
+        animation-name: opacity_increase;
+        animation-duration:3s;
+        animation-delay:12s;
+        opacity: 0;
+        }
+
+        #main_text{
+        position: static;
+        bottom: 40%;
+        width: 60%;
+        right: 60%;
+        border-color:green;
+        color: green;
+        opacity:0;
+        animation-name: opacity_increase;
+        animation-delay: 12s;
+        animation-duration:3s;
+        }
+
+        p{
+        font-size: 20pt;
+        color: white;
+        font: normal;
+        line-height:250%;
+        }
+
+        #welcome_text{
+        font-size: 40pt;
+        }
+
+        a{
+        padding: 10px 20px;
+        position:static;
+        height: 10%;
+        width: 40%;
+        background-color:transparent;
+        border-color: yellow;
+        color: white;
+        border-radius: 8px;
+        opacity: 0;
+        animation-name: opacity_increase;
+        animation-delay: 12s;
+        animation-duration:3s;
+        font-size:14pt;
+        margin-left: 80px;
+
+        }
+
+
+        #name_text{
+        font-size: 30pt;
+        font-style: normal;
+        position: fixed;
+        color:white;
+        opacity: 0;
+        right: 33%;
+        top: 35%;
+        animation-name: opacity_increase, opacity_decrease;
+        animation-duration:3s,2s;
+        animation-delay:3s,9s;
+        }
+
+        #hello_text{
+        font-size: 30pt;
+        font-style: normal;
+        opacity: 0;
+        position: fixed;
+        color: white;
+        right: 59%;
+        top: 25%;
+
+        animation-name: opacity_increase, opacity_decrease;
+        animation-duration:3s,2s;
+        animation-delay: 0s,9s
+        }
+
+        a:hover{
+        color: DarkOrange;
+        text-decoration:none;
+      }
+
+        #home_text{
+         font-size: 30pt;
+        font-style: normal;
+        position: fixed;
+        opacity: 0;
+        color:white;
+        right: 44%;
+        top: 45%;
+        animation-name: opacity_increase, opacity_decrease;
+        animation-duration:3s,2s;
+        animation-delay: 6s,9s
+        }
+
+        #software_dev{
+        font-size: 30pt;
+        font-style: normal;
+        position: fixed;
+        color:red;
+        right: 22%;
+        opacity: 0;
+        top: 45%;
+        animation-name: opacity_increase, opacity_decrease;
+        animation-duration:3s,2s;
+        animation-delay: 6s,9s
+        }
+
+
+
+        @keyframes opacity_increase{
+        from {opacity: 0;}
+
+        to {opacity: 1.0;}
+
+        }
+
+
+        @keyframes opacity_decrease {
+        from {opacity: 1.0;}
+
+        to {opacity: 0;}
+
+        }
+
+
+</style>
+
+<div id = "imgdivid">
+
+    <img src = "KenyonPortrait.jpg" alt = "Picture of me sitting down for a portrait">
+
+</div>
+
+<script>
+    const main_text = document.getElementById("main_text");
+    const name_text = document.getElementById("name_text");
+    const hello_text = document.getElementById("hello_text");
+    const software_dev = document.getElementById("software_dev");
+    const hobbies_button = document.getElementsByTagName("a")[0];
+    const exp_button = document.getElementsByTagName("a")[1];
+    const bio_button = document.getElementsByTagName("a")[2];
+    const blog_button = document.getElementsByTagName("a")[3];
+    const contact = document.getElementsByTagName("a")[4];
+    const photos = document.getElementsByTagName("a")[5];
+    const experience = document.getElementsByTagName("a")[6];
+
+
+    const image = document.getElementById("imgdivid");
+
+
+      name_text.onanimationstart = () => {
+      name_text.style.opacity = 1.0;
+    }
+
+    home_text.onanimationend = () =>{
+    home_text.style.opacity = 1.0;
+    }
+
+    software_dev.onanimationend = () =>{
+    software_dev.style.opacity = 1.0;
+    }
+
+    hello_text.onanimationend = () => {
+    hello_text.style.opacity = 1.0;
+    }
+
+    main_text.onanimationend = () => {
+    main_text.style.opacity = 1.0;
+    }
+
+    hobbies_button.onanimationend = () => {
+    hobbies_button.style.opacity = 1.0;
+    }
+
+     bio_button.onanimationend = () => {
+    bio_button.style.opacity = 1.0;
+    }
+
+
+     exp_button.onanimationend = () => {
+    exp_button.style.opacity = 1.0;
+    }
+
+    image.onanimationend = () => {
+    image.style.opacity = 1.0;
+    }
+
+     blog_button.onanimationend = () => {
+    blog_button.style.opacity = 1.0;
+    }
+
+     contact.onanimationend = () => {
+    contact.style.opacity = 1.0;
+    }
+
+     photos.onanimationend = () => {
+    photos.style.opacity = 1.0;
+    }
+
+     experience.onanimationend = () => {
+    experience.style.opacity = 1.0;
+    }
+
+
+
+
+    function end_animation() {
+
+      name_text.onanimationend = () => {
+      name_text.style.opacity = 0;
+    }
+
+     home_text.onanimationend = () =>{
+     home_text.style.opacity = 0;
+
+    }
+
+    software_dev.onanimationend = () =>{
+    software_dev.style.opacity = 0;
+
+    }
+
+    hello_text.onanimationend = () => {
+    hello_text.style.opacity = 0;
+    }
+
+
+
+
+    }
+
+    setTimeout(end_animation, 10000);
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+
+
+
+</html>

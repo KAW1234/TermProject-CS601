@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href = "CSstylesheet.css" rel = "stylesheet">
+    <meta charset="UTF-8">
+    <title>PhotoGallery</title>
+    <meta name ="description" content = "A webpage that includes photos of me">
+</head>
+<body>
+
+<header>
+    <a href = "http://localhost:63342/CS601_HW2_Wilkerson/CS601_HW1_Wilkerson/src/Biography_file.html?_ijt=65o5k7gpsr1a1qn7vnvskmeh37&_ij_reload=RELOAD_ON_SAVE">Biography</a>
+
+    <a href = "http://localhost:63342/CS601_HW2_Wilkerson/CS601_HW1_Wilkerson/src/Hobbies.html?_ijt=sui9n46c6mif1919ueghb1r2oq&_ij_reload=RELOAD_ON_SAVE">Hobbies</a>
+
+    <a href = "http://localhost:63342/CS601_HW2_Wilkerson/CS601_HW1_Wilkerson/src/GamingBlog.html?_ijt=lq41v8p5tnga5msrn17qnb86im&_ij_reload=RELOAD_ON_SAVE">Blog</a>
+
+    <a href = "http://localhost:63342/CS601_HW2_Wilkerson/CS601_HW1_Wilkerson/src/contact.html?_ijt=p07crpaos2snc4bch2osi7r9ns&_ij_reload=RELOAD_ON_SAVE">Contact</a>
+
+    <a href = "http://localhost:63342/CS601_HW2_Wilkerson/CS601_HW1_Wilkerson/src/Coding%20Jounrey.html?_ijt=sui9n46c6mif1919ueghb1r2oq&_ij_reload=RELOAD_ON_SAVE"> Coding Journey</a>
+
+    <a href = "http://localhost:63342/CS601_HW2_Wilkerson/CS601_HW1_Wilkerson/src/experience.html?_ijt=d9mng567po70ldu21v44sqd2ke&_ij_reload=RELOAD_ON_SAVE">Experience</a>
+
+    <a id = "trail" href = "http://localhost:63342/CS601_HW2_Wilkerson/CS601_HW1_Wilkerson/src/Photo%20Gallery.html?_ijt=2o27r7md2madg39didde1j6cfn&_ij_reload=RELOAD_ON_SAVE">Photos</a>
+
+
+
+</header>
+
+<h1>Here are a couple photos of me!</h1>
+
+
+
+
+
+
+
+
+<div id = "vue-slider">
+    <div class = "picture">
+        <img :src = "active_picture">
+    </div>
+
+    <div class = "pictures">
+        <div v-for = "(picture,index) in pictures"> <!--Iterate through pictures-->
+            <!--Change active picture when mouse hovers over them-->
+        <img :src="picture" @mouseover = "changeCurrentPic(index)"
+            :class = "{active: index == indexOfActive ? true : false}"> <!--Border surrounds active picture-->
+
+        </div>
+
+
+    </div>
+
+
+</div>
+<script src='https://unpkg.com/vue@next'></script>
+
+
+<script>
+    const VueSlider = { /*Vue*/
+    data() {
+    return {
+
+    indexOfActive: 0,
+
+    active_picture: "photo2.jpg",
+
+/*An array of pictures to be sorted over*/
+    pictures: [
+    "photo2.jpg",
+    "photo3.jpg",
+    "photo_one.jpg",
+    "photo5.jpg",
+    "KenyonImage.jpg",
+    "trophy_photo.jpg"
+    ]
+
+
+    }
+
+    },
+/*Method that change current picture*/
+    methods: {
+    changeCurrentPic(index) {
+    this.active_picture = this.pictures[index];
+    this.indexOfActive = index;
+    }
+
+    }
+
+    }
+
+    const vue = Vue.createApp(VueSlider).mount('#vue-slider');
+
+</script>
+
+<style>
+
+    body{
+    background-image: url("background3.jpg");
+
+    }
+
+     .active{
+     border: 4px solid red;
+
+
+     }
+
+    .picture{
+    width: 400px;
+
+    }
+
+    .picture img{
+    width: 70%;
+    padding-top: 200px;
+    padding-left: 600px;
+    border: 5px,
+        }
+
+    .pictures{
+     width: 300px;
+     display:flex;
+
+
+      }
+
+      .pictures img{
+      width: 200px;
+      margin: 10px;
+      }
+
+      a{
+        padding: 10px 20px;
+        position:static;
+        height: 10%;
+        width: 20%;
+        background-color:transparent;
+        border-color: yellow;
+        color: white;
+        border-radius: 8px;
+        opacity: 1;
+        font-size:14pt;
+        margin-left: 80px;
+        }
+
+        a:hover{
+    color:DarkOrange;
+     }
+
+     h1{
+     color:white;
+
+
+     }
+
+
+</style>
+
+
+
+
+
+</body>
+
+
+</html>
+
+
+
+
+

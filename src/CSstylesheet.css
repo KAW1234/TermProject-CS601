@@ -1,0 +1,318 @@
+
+  body{
+    background-image: url("background3.jpg");
+
+    }
+
+
+img {
+height: auto;
+margin-left:auto;
+margin-right: auto;
+width: 36%
+}
+
+
+
+table, td {
+border: 1px solid white;
+color:white;
+
+}
+
+h2{
+color:white;
+
+
+}
+
+th{
+color: orange;
+border: 1px solid;
+
+}
+
+a{
+  padding: 10px 20px;
+  position:static;
+  height: 10%;
+  width: 40%;
+  background-color:transparent;
+  border-color: yellow;
+  color: white;
+  border-radius: 8px;
+  opacity: 1;
+  font-size:14pt;
+  margin-left: 80px;
+  text-decoration: none;
+    }
+
+
+li a{
+color:purple;
+list-style-type:none;
+}
+
+a:hover{
+color: DarkOrange;
+text-decoration:none;
+
+}
+
+
+/*Changes all text in paragraphs*/
+p{
+font-size:15pt;
+font-style: normal;
+line-height:150%;
+color:white;
+
+}
+
+
+
+
+
+
+.list_text {
+font-weight:bold;
+color:lightblue;
+}
+
+/*Score of the game reviews*/
+.score{
+color:green;
+
+}
+
+#PC_Build{
+color: MediumPurple;
+opacity: 0;
+
+}
+
+#laptop_Build{
+color: MediumPurple;
+position: fixed;
+right: 6%;
+opacity: 1;
+}
+
+#trail{
+  background-color: blue;
+   }
+
+/*Text for the "Ranking the top 3 games" caption*/
+#Caption_text{
+font-weight: bold;
+
+
+}
+
+.box{
+padding: 50px;
+text-align:center;
+color: white;
+
+}
+
+
+
+
+/*Changes text based on if the width is less than 700 pixels*/
+@media all and (max-width: 700px){
+
+button{
+position: absolute;
+font-size: 4pt;
+right: 49.5%;
+bottom:50%;
+}
+
+#welcome_text{
+  font-size: 13pt;
+    }
+
+
+  #name_text{
+  font-size: 10pt;
+  font-style: normal;
+  position: fixed;
+  color:white;
+  opacity: 0;
+  right: 33%;
+  top: 35%;
+  animation-name: opacity_increase, opacity_decrease;
+  animation-duration:3s,2s;
+  animation-delay:3s,9s;
+        }
+
+  #hello_text{
+  font-size: 10pt;
+  font-style: normal;
+  opacity: 0;
+  position: fixed;
+  color: white;
+  right: 59%;
+  top: 25%;
+
+  animation-name: opacity_increase, opacity_decrease;
+  animation-duration:3s,2s;
+  animation-delay: 0s,9s
+  }
+
+
+
+  #home_text{
+  font-size: 10pt;
+  font-style: normal;
+  position: fixed;
+  opacity: 0;
+  color:white;
+  right: 44%;
+  top: 45%;
+  animation-name: opacity_increase, opacity_decrease;
+  animation-duration:3s,2s;
+  animation-delay: 6s,9s
+        }
+
+ #software_dev{
+ font-size: 10pt;
+ font-style: normal;
+ position: fixed;
+ color:red;
+ right: 22%;
+ opacity: 0;
+ top: 45%;
+ animation-name: opacity_increase, opacity_decrease;
+ animation-duration:3s,2s;
+ animation-delay: 6s,9s
+ }
+
+
+p{
+font-size:10pt;
+font-style: normal;
+
+}
+
+h1{
+font-size:15pt;
+
+
+
+}
+
+.HobbiesText {
+color: white;
+
+}
+
+#CodingJourneyText{
+color: black;
+}
+
+#biotext{
+color: black;
+
+
+}
+
+#sidebar{
+float:left;
+width:346%;
+position: fixed;
+padding:10px;
+height: 500px;
+color:red;
+background-color:white;
+background: #36F;
+
+}
+
+
+}
+
+@media print{
+
+
+p{
+font-style:normal;
+color:black;
+}
+
+h1{
+font-style: normal;
+font-size: 30pt;
+color: black;
+background-color: white;
+
+}
+
+body{
+background-color:white;
+}
+
+#PC_Build{
+color: black;
+
+}
+
+.HobbiesText {
+color: purple;
+
+}
+
+#Caption_text{
+font-weight: bold;
+color: black;
+
+
+}
+
+.list_text {
+font-weight:bold;
+color: black;
+}
+
+.score{
+color:black;
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+#imgdiv{
+position: absolute;
+left: 0%;
+bottom: 0%;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
